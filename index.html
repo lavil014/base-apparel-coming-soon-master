@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<main class="main-container">
+ <section class="info-container">
+  <img  class = "logo-img" src="/images/logo.svg" alt="Brand logo">
 
-  We're coming soon
+  <p class="main-header"> <span class="red-header">WE'RE</span><span class="bold-header"> <br>COMING<br> SOON </span></p>
+  <p class="paragraph">  Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+  <form action="">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <div class="input-container">
+    <input type="email" name="" id="e-input" placeholder="Email Address">
+    <img class="icon-arrow" src="/images/icon-arrow.svg" alt="icon-arrow">
+    </div>
+    <span class="error-message">Please provide a valid email</span>
+  </form>
+ </section>
+ <section class="image-container">
+  <img src="/images/hero-desktop.jpg" alt="picture of a lady">
+ </section>
+</main>
 </body>
 </html>
