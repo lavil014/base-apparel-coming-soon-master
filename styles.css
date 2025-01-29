@@ -69,11 +69,6 @@ main{
 }
 
 input{
-  background-image: url(/images/icon-error.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2.4rem) center; 
-  outline: none;
-  background-size: 1rem;
   border: solid var(--DarkGrayishRed) 0.1px;
   padding: 0.5rem 1rem; 
   border-radius: 1rem;
@@ -84,6 +79,14 @@ input::placeholder{
   color: var(--DesaturatedRed);
   font-weight: 100;
   font-size: 0.7rem;
+}
+
+.input-error{
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2.4rem) center; 
+  outline: none;
+  background-size: 1rem;
 }
 
 .icon-arrow{
@@ -107,5 +110,7 @@ input::placeholder{
   font-weight: 200;
   font-size: 0.7rem;
   margin-left: 1rem;
+  display: none;
+  transition: 1s;
 }
 
