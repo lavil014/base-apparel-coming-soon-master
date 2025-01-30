@@ -54,6 +54,12 @@ main{
   font-weight: 500;
 }
 
+.success-message{
+  color: rgb(219, 110, 110);
+  font-weight: 400;
+}
+
+
 .paragraph {
   margin-top: -4rem;
   text-align: left;
@@ -61,6 +67,7 @@ main{
   max-width: 25rem;
   color: var(--DesaturatedRed);
 }
+
 
 .input-container{
   display: flex;
@@ -87,6 +94,7 @@ input::placeholder{
   background-position: calc(100% - 2.4rem) center; 
   outline: none;
   background-size: 1rem;
+  border: solid red 1px;
 }
 
 .icon-arrow{
