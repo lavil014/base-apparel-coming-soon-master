@@ -21,9 +21,7 @@ body{
 }
 
 main{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
- 
+  display: flex;
 }
 
 
@@ -81,7 +79,7 @@ input{
   border: solid var(--DarkGrayishRed) 0.1px;
   padding: 0.5rem 1rem; 
   border-radius: 1rem;
-  min-width: 21rem;
+  width: 21rem;
 }
 
 input::placeholder{
@@ -124,6 +122,75 @@ input::placeholder{
   transition: 1s;
 }
 
-.image-container img{
+.image-container{
   min-width: 100%;
+  background-image: url(/images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+
+}
+
+@media (width < 475px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo-container img{
+    width: 8rem;
+    padding: 1rem;
+    margin-left: 2rem;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info-container{
+    height: 20rem;
+    font-size: 0.7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    background-image: none;
+  }
+
+  .logo-img{
+    display: none;
+  }
+
+  .info-container .main-header{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: -4rem;
+  }
+
+  .info-container .paragraph{
+    text-align: center;
+    min-width: 14rem;
+  }
+
+  form{
+    margin-top: -3rem;
+  }
+
+  input{
+    width: 12rem;
+  }
+
+  .icon-arrow{
+    padding: 0.5rem 1.2rem;
+  }
+
+
+
+  .image-container{
+    background-image: url(/images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    height: 20rem;
+    background-size: cover
+  }
 }
