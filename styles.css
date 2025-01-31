@@ -17,11 +17,13 @@ body{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    
 }
 
 main{
-  display: flex;
-  gap: 2rem;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ 
 }
 
 
@@ -122,3 +124,6 @@ input::placeholder{
   transition: 1s;
 }
 
+.image-container img{
+  min-width: 100%;
+}
